@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'Create Dockerfile ...'
-                    sh 'docker build -t http://registry-192.168.1.38.nip.io/homeassistant/helm-kubectl:latest .'
+                    sh 'docker build -t registry-192.168.1.38.nip.io/homeassistant/helm-kubectl:latest .'
                 }
             }
         }
